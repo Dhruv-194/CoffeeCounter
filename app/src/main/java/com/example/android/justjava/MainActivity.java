@@ -14,7 +14,9 @@ import java.text.NumberFormat;
 /**
  * This app displays an order form to order coffee.
  */
+
 public class MainActivity extends AppCompatActivity {
+
     int quantity=2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         display(quantity);
 
     }
-
     /**
      * This method is called when the order button is clicked.
      */
@@ -57,10 +58,7 @@ public class MainActivity extends AppCompatActivity {
      displayMessage(priceMessage);
 
     }
-
-
-
-
+    
 
     private int calculatePrice(boolean addWhippedCream,boolean addChocolate){
         int baseprice =5;
@@ -83,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
         priceMessage+=  "\nThankyou!";
         return priceMessage;
     }
-
 
 
 
